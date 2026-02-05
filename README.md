@@ -5,7 +5,7 @@ def calcular_promedio():
     """
     Algoritmo para analistas: Calcula el promedio de ventas diarias.
     """
-    print("--- 📊 Analizador de Ventas Diarias ---")
+    print("--- Analizador de Ventas Diarias ---")
     ventas = []
 
     while True:
@@ -18,14 +18,14 @@ def calcular_promedio():
             valor = float(entrada)
             ventas.append(valor)
         except ValueError:
-            print("❌ Error: Ingrese un número válido.")
+            print(" Error: Ingrese un número válido.")
 
     if ventas:
         promedio = statistics.mean(ventas)
         total_ventas = sum(ventas)
         
         print("\n" + "="*30)
-        print(f"📈 RESULTADOS DEL ANÁLISIS:")
+        print(f" RESULTADOS DEL ANÁLISIS:")
         print(f"Total de días: {len(ventas)}")
         print(f"Venta Total: ${total_ventas:,.2f}")
         print(f"Promedio Diario: ${promedio:,.2f}")
